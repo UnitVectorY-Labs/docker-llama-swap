@@ -19,6 +19,7 @@ docker run -d --rm \
   --pull=always \
   --name llama-swap \
   -p 8080:8080 \
+  --add-host=host.docker.internal:host-gateway \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v "$PWD/config.yaml:/app/config.yaml" \
   ghcr.io/unitvectory-labs/docker-llama-swap:current \
