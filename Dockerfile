@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM node:24-bookworm AS builder
+FROM node:25-bookworm AS builder
 
 ARG LLAMA_SWAP_REF=main
 ARG GO_VERSION=1.26.1
