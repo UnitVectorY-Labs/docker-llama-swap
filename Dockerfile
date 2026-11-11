@@ -3,7 +3,7 @@
 FROM node:26-bookworm AS builder
 
 ARG LLAMA_SWAP_REF=main
-ARG GO_VERSION=1.27.3
+ARG GO_VERSION=1.27.4
 ARG TARGETARCH
 
 RUN apt-get update && \
